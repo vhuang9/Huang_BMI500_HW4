@@ -5,6 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn import metrics
 import matplotlib.pyplot as plt
 
+@profile
 def run(fname):
     X, ypred, ytrue = classify(fname)
     acc, prec, recall = results(ypred, ytrue)
