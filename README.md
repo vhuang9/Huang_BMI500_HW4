@@ -5,7 +5,12 @@
 git clone https://github.com/vhuang9/Huang_BMI500_HW4.git
 ```
 ## Requirements
-This script requires the following packages: scikit-learn, numpy, pandas, matplotlib. The time to train is less than 1 second, and the memory requirements are ~1 GB. 
+This script requires the following packages: scikit-learn, numpy, pandas, matplotlib. The time to train is less than 1 second, and the memory requirements are ~1 GB.  
+When running on BMI cluster git clone the repository then in python:
+```
+from Huang_BMI500_HW4 import kmeans_clustering
+kmeans_clustering.run('heart.csv')
+```
 
 ## Description of scripts
 __kmeans_clustering.py__  
